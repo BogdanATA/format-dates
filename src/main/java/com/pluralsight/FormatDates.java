@@ -12,6 +12,12 @@ public class FormatDates {
         DateTimeFormatter format1 = DateTimeFormatter.ofPattern("MM/dd/yyyy");
         System.out.println(today.format(format1));
 
+        DateTimeFormatter format2 = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        System.out.println(today.format(format2));
+
+        DateTimeFormatter format3 = DateTimeFormatter.ofPattern("EEEE MM, yyyy");
+        System.out.println(today.format(format3));
+
         // current date + time
         LocalDateTime now = LocalDateTime.now();
 
